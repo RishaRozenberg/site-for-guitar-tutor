@@ -1,0 +1,38 @@
+@import "normalize.scss"
+@import "reset.scss"
+
+$bg-section: #F0F0F0
+
+*
+    box-sizing: border-box
+
+.main-section
+    background-color: $bg-section
+    &__header
+        padding: 16px 19px 0px 23px
+        justify-content: space-between
+        align-items: center
+    &__logo
+        width: 134px
+        height: 69px
+
+.section
+    max-width: 1140px
+    margin: 0 auto
+    // удалить бордер
+    border: 1px solid red
+    display: flex
+
+.nav
+    color: black
+    &__list
+        display: flex
+    &__link
+        a
+            color: black
+            text-decoration: none
+        &:not(:last-child)
+            margin-right: 60px
+
+.left-wrapper
+    .left-wrapper__rectangle-blue
