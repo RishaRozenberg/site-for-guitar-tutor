@@ -1,0 +1,54 @@
+$bg-section: #F0F0F0
+$color-blue: #5290EA
+$color-red: #f28b64
+
+@mixin rectangle ($bg, $width, $height, $transform)
+    background-color: $bg
+    width: $width
+    height: $height
+    transform: $transform
+    border-radius: 100px
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+
+@mixin button
+    width: 200px
+    height: 60px
+    border-radius: 100px
+    background: #F28B64
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+    color: #fff
+    text-align: center
+    font-size: 18px
+    border: none
+
+%elipse-s
+    width: 194px
+    height: 194px
+    background: linear-gradient(143.92deg, rgba(237, 123, 80, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 53.25%, rgba(44, 44, 44, 0.5) 85.74%)
+    border-radius: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+
+%subtract-s
+    width: 129.33px
+    height: 129.33px
+    background: #F0F0F0
+    border-radius: 150px
+
+@mixin elipse-m
+    width: 282px
+    height: 282px
+    display: flex
+    align-items: center
+    justify-content: center
+    transform: rotate(45deg)
+    border-radius: 188px
+    background-color: linear-gradient(144deg, #ED7B50 0%, #488AEA 54.17%, #2C2C2C 100%)
+
+@mixin subtract-m
+    width: 188px
+    height: 188px
+    transform: rotate(45deg)
+    border-radius: 188px
+    background-color: : #C4C4C4

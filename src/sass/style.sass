@@ -1,27 +1,29 @@
 @import "normalize.scss"
 @import "reset.scss"
-
-$bg-section: #F0F0F0
-
+@import "repeat"
 *
     box-sizing: border-box
+.section
+    max-width: 1140px
+    margin: 0 auto
 
 .main-section
-    background-color: $bg-section
+    background-color: red
+    // не реагирует блок
     &__header
+        display: flex
         padding: 16px 19px 0px 23px
         justify-content: space-between
         align-items: center
     &__logo
         width: 134px
         height: 69px
-
-.section
-    max-width: 1140px
-    margin: 0 auto
-    // удалить бордер
-    border: 1px solid red
-    display: flex
+    &__content
+        display: flex
+    &__first-elipse
+        position: absolute
+        top: 129px
+        right: 80px
 
 .nav
     color: black
@@ -35,4 +37,60 @@ $bg-section: #F0F0F0
             margin-right: 60px
 
 .left-wrapper
-    .left-wrapper__rectangle-blue
+    &__photo
+        position: relative
+        z-index: 3
+    &__rectangle-blue
+        @include rectangle(#5290EA, 565.949px, 220px, rotate(-64.003deg))
+        position: absolute
+        top: 150px
+        left: -50px
+    &__rectangle-orange
+        @include rectangle(#F28B64, 618.428px, 220px, rotate(-50.806deg))
+        position: absolute
+        left: -30px
+        top: 160px
+        z-index: 2
+    &__rectangle-grey
+        @include rectangle(#E2E2E2, 608.968px, 220px, rotate(-36.15deg))
+        position: absolute
+        left: 10px
+        top: 190px
+
+.right-wrapper
+    position: absolute
+    z-index: 4
+    top: 150px
+    right: 76px
+    width: 372px
+    &__social
+        position: relative
+    &__tittle
+        font-size: 72px
+        line-height: 93.9%
+    &__line
+        width: 65px
+        border: none
+        border-top: 1px solid #000
+        margin: 0
+        margin-bottom: 5px
+    &__text
+        font-size: 16px
+        margin-bottom: 20px
+.right-wrapper__icon:not(:last-child)
+    margin-right: 17px
+.registration
+    display: flex
+    align-items: center
+    &__text
+        font-size: 16px
+    &__button
+        @include button
+        margin-right: 32px
+    &__link-social
+        margin-right: 12px
+
+.elipse
+    @extend %elipse-s
+    &__subtract
+        @extend %subtract-s
