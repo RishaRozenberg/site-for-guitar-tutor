@@ -6,8 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>ИЗМЕНИТЬ</title>
-    <!-- Добавить описание сайта и лого -->
+    <title>Уроки игры на гитаре</title>
+    <meta name="description" content="Лучший репетитор игры на гитаре в Москвe">
+    <link rel="apple-touch-icon" sizes="57x57" href="./icons/fav-icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icons/fav-icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icons/fav-icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icons/fav-icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icons/fav-icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icons/fav-icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icons/fav-icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icons/fav-icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/fav-icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./icons/fav-icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/fav-icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icons/fav-icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/fav-icons/favicon-16x16.png">
+    <link rel="manifest" href="./icons/fav-icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -20,6 +37,7 @@
                 <div class="main-section__logo">
                     <a href="#"><img src="./img/logo.svg" alt="Логотип гитариста Виктора"></a>
                 </div>
+                <!-- навигация -->
                 <nav class="header__nav nav">
                     <ul class="nav__list">
                         <li class="nav__link"><a href="#">Обо мне</a></li>
@@ -40,12 +58,12 @@
                 </div>
                 <!-- основной блок первой секции -->
                 <div class="right-wrapper">
-                    <div class="right-wrapper__social">
-                        <img src="./icons/Skype.png" alt="Написать Виктору в Скайпе" class="right-wrapper__icon">
-                        <img src="./icons/VK.png" alt="Написать Виктору в ВКонтакте" class="right-wrapper__icon">
-                        <img src="./icons/Telegram.png" alt="Написать Виктору в Телеграме" class="right-wrapper__icon">
-                        <img src="./icons/instagram.png" alt="Написать Виктору в Инстаграме"
-                            class="right-wrapper__icon">
+                    <!-- соц.сети -->
+                    <div class="right-wrapper__social social">
+                        <img src="./icons/Skype.png" alt="Написать Виктору в Скайпе" class="social__icon">
+                        <img src="./icons/VK.png" alt="Написать Виктору в ВКонтакте" class="social__icon">
+                        <img src="./icons/Telegram.png" alt="Написать Виктору в Телеграме" class="social__icon">
+                        <img src="./icons/instagram.png" alt="Написать Виктору в Инстаграме" class="social__icon">
                     </div>
                     <h1 class="right-wrapper__tittle">Я Виктор</h1>
                     <hr class="right-wrapper__line">
@@ -58,22 +76,139 @@
                     </div>
                 </div>
                 <!-- Круги -->
-                <div class="main-section__first-elipse elipse">
-                    <div class="elipse__subtract"></div>
+                <div class="main-section__first-elipse elipse-s">
+                    <div class="elipse-s__subtract"></div>
+                </div>
+            </div>
+            <div class="main-section__second-elipse elipse-m">
+                <div class="elipse-m__subtract"></div>
+            </div>
+        </section>
+        <!-- вторая секция -->
+        <section class="type-lessons section">
+            <h2>Преподаю</h2>
+            <hr>
+            <!-- картинки с гитарами -->
+            <div class="type-lessons__guitars guitar">
+                <div class="guitar__block_grey">
+                    <img src="./img/guitars-electric.png" alt="Вы можете научиться играть на электрической гитаре"
+                        class="guitar__picture">
+                    <h3 class="guitar__name">Электро гитара</h3>
+                    <div class="guitar__first-elipse elipse-s">
+                        <div class="elipse-s__subtract"></div>
+                    </div>
+                </div>
+                <div class="guitar__block_orange">
+                    <img src="./img/guitars-acoustic.png" alt="Вы можете научиться играть на акустической гитаре"
+                        class="guitar__picture">
+                    <h3 class="guitar__name">Акустическая гитара</h3>
+                </div>
+                <div class="guitar__block_blue">
+                    <img src="./img/guitars-ukulele.png" alt="Вы можете научиться играть на укулеле"
+                        class="guitar__picture">
+                    <h3 class="guitar__name">Укулеле гитара</h3>
+                    <div class="guitar__second-elipse elipse-s">
+                        <div class="elipse-s__subtract"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- о себе в цифрах -->
+            <div class="type-lessons__in-numbers in-numbers">
+                <div class="in-numbers__block in-numbers__block_first">
+                    <img src="./icons/in-nunbers-cup.svg" alt="Кубок за большой стаж" class="type-lessons__icon">
+                    <div class="in-numbers__content">
+                        <h4 class="in-numbers__number">7</h4>
+                        <p class="in-numbers__text">лет <br> преподавания</p>
+                    </div>
+                </div>
+                <div class="in-numbers__block">
+                    <img src="./icons/in-nunbers-recall.svg" alt="Картинка отзывов" class="type-lessons__icon">
+                    <div class="in-numbers__content">
+                        <h4 class="in-numbers__number">276</h4>
+                        <p class="in-numbers__text">Отзывов <br> на 5 звезд</p>
+                    </div>
+                </div>
+                <div class="in-numbers__block">
+                    <img src="./icons/in-nunbers-students.svg" alt="Студенческая шляпа" class="type-lessons__icon">
+                    <div class="in-numbers__content">
+                        <h4 class="in-numbers__number">314</h4>
+                        <p class="in-numbers__text">Студентов <br> обученно</p>
+                    </div>
+                </div>
+                <div class="in-numbers__block">
+                    <img src="./icons/in-nunbers-timing.svg" alt="Нотный стан" class="type-lessons__icon">
+                    <div class="in-numbers__content">
+                        <h4 class="in-numbers__number">2000</h4>
+                        <p class="in-numbers__text">часов <br> преподавания</p>
+                    </div>
                 </div>
             </div>
         </section>
-
-
-
-
-
-
+        <!-- Третья секция -->
+        <section class="text-about">
+            <div class="text-about__section section">
+                <!-- Картинки -->
+                <div class="text-about__left-wrapper">
+                    <div class="text-about__tittle">
+                        <h2>Обучение</h2>
+                        <hr>
+                    </div>
+                    <img src="./icons/rectangle-with-lines.svg" alt="Декоративный узор сайта"
+                        class="text-about__rectangle-striped">
+                    <div class="text-about__first-elipse elipse-m">
+                        <div class="elipse-m__subtract"></div>
+                    </div>
+                </div>
+                <!-- Текст третьей секции -->
+                <div class="text-about__right-wrapper main-text">
+                    <div class="main-text__tittle">
+                        <h2 class="text-about__right-tittle">
+                            <hr class="tittle-hr">Готовлю <br> виртуозов
+                        </h2>
+                    </div>
+                    <p class="main-text__paragraph main-text__paragraph_first">Равным образом рамки и место обучения
+                        кадров влечет за собой
+                        процесс
+                        внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
+                        Товарищи! реализация намеченных плановых заданий позволяет выполнять важные задания по
+                        разработке систем массового участия. </p>
+                    <p class="main-text__paragraph main-text__paragraph_second">
+                        Повседневная практика показывает, что рамки и место обучения кадров позволяет оценить значение
+                        новых предложений. Не следует, однако забывать, что рамки и место обучения кадров влечет за
+                        собой процесс внедрения и модернизации систем массового участия.
+                    </p>
+                    <div class="main-text__registration registration">
+                        <button class="registration__button">Забронировать <br> урок</button>
+                        <a href="#" class="registration__link-social"><img src="./icons/chat.svg"
+                                alt="Написать Виктору"></a>
+                        <p class="registration__text">Есть <br> вопросы?</p>
+                    </div>
+                </div>
+                <!-- круги -->
+            </div>
+            <div class="text-about__second-elipse elipse-m">
+                <div class="elipse-m__subtract"></div>
+            </div>
+        </section>
     </main>
-
-
-
-
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="footer__content section">
+            <img src="./img/footer-guitar.png" alt="Пример гитары, на которой вы можете научиться играть"
+                class="footer__img">
+            <div class="footer__wrapper">
+                <h2 class="footer__tittle">
+                    <hr class="tittle-hr">Запишись на <br> пробный урок
+                </h2>
+                <div class="footer_social social">
+                    <img src="./icons/Skype.png" alt="Написать Виктору в Скайпе" class="social__icon">
+                    <img src="./icons/VK.png" alt="Написать Виктору в ВКонтакте" class="social__icon">
+                    <img src="./icons/Telegram.png" alt="Написать Виктору в Телеграме" class="social__icon">
+                    <img src="./icons/instagram.png" alt="Написать Виктору в Инстаграме" class="social__icon">
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
