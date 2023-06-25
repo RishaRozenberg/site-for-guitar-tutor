@@ -740,7 +740,7 @@ h4 {
 .footer__img {
   position: absolute;
   left: -250px;
-  bottom: -150px;
+  bottom: 0px;
 }
 .footer__tittle {
   margin-bottom: 20px;
