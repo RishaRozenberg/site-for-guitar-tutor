@@ -31,6 +31,11 @@
     <main>
         <!-- header + первая секция -->
         <section class="main-section">
+            <div class="hamburger">
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+            </div>
             <!-- header -->
             <header class="main-section__header container">
                 <!-- Макс.размер страницы зашит в section -->
@@ -39,11 +44,21 @@
                 </div>
                 <!-- навигация -->
                 <nav class="header__nav nav">
-                    <ul class="nav__list">
-                        <li class="nav__link"><a href="#about-me">Обо мне</a></li>
-                        <li class="nav__link"><a href="#lessons">Занятия</a></li>
-                        <li class="nav__link"><a href="#">Запись</a></li>
-                    </ul>
+                    <div class="nav__list">
+                        <ul class="nav__links">
+                            <li class="nav__link"><a href="#about-me">Обо мне</a></li>
+                            <li class="nav__link"><a href="#lessons">Занятия</a></li>
+                            <li class="nav__link"><a href="#">Запись</a></li>
+                        </ul>
+                        <div class="nav__registration registration">
+                            <button class="registration__button">Забронировать <br> урок</button>
+                            <div class="registration__form">
+                                <a href="#" class="registration__link-social"><img src="./icons/chat.svg"
+                                        alt="Написать Виктору"></a>
+                                <p class="registration__text">Есть <br> вопросы?</p>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
             </header>
             <!-- первая секция -->
@@ -172,16 +187,16 @@
                             <hr class="tittle-hr">Готовлю <br> виртуозов
                         </h2>
                     </div>
-                    <p class="main-text__paragraph main-text__paragraph_first">Равным образом рамки и место обучения
-                        кадров влечет за собой
-                        процесс
-                        внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
-                        Товарищи! реализация намеченных плановых заданий позволяет выполнять важные задания по
-                        разработке систем массового участия. </p>
+                    <p class="main-text__paragraph main-text__paragraph_first">Хотите научиться играть на гитаре или
+                        укулеле? Тогда я готов помочь вам! Моя методика основана на индивидуальном подходе к каждому
+                        ученику. Мы будем работать над техникой игры на инструменте, изучать аккорды и
+                        мелодии, а также развивать музыкальный слух. Благодаря моим урокам вы сможете быстро овладеть
+                        игрой на гитаре или укулеле и наслаждаться музыкой!</p>
                     <p class="main-text__paragraph main-text__paragraph_second">
-                        Повседневная практика показывает, что рамки и место обучения кадров позволяет оценить значение
-                        новых предложений. Не следует, однако забывать, что рамки и место обучения кадров влечет за
-                        собой процесс внедрения и модернизации систем массового участия.
+                        Я уверен, что могу помочь вам достичь ваших музыкальных целей. Мои
+                        уроки подходят как новичкам, так и опытным музыкантам. Я помогу вам развить свой индивидуальный
+                        стиль игры и научиться играть любимые песни. Не откладывайте свои музыкальные мечты на потом -
+                        начните учиться играть на гитаре или укулеле уже сегодня!
                     </p>
                     <div class="main-text__registration registration">
                         <button class="registration__button">Забронировать <br> урок</button>
@@ -215,6 +230,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
