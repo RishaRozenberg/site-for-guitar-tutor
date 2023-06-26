@@ -32,7 +32,7 @@
         <!-- header + первая секция -->
         <section class="main-section">
             <!-- header -->
-            <header class="main-section__header section">
+            <header class="main-section__header container">
                 <!-- Макс.размер страницы зашит в section -->
                 <div class="main-section__logo">
                     <a href="#"><img src="./img/logo.svg" alt="Логотип гитариста Виктора"></a>
@@ -47,7 +47,7 @@
                 </nav>
             </header>
             <!-- первая секция -->
-            <div class="main-section__content section">
+            <div class="main-section__content container">
                 <!-- картинки первой секции -->
                 <div class="left-wrapper">
                     <img src="./img/main-photo.png" alt="Фотография Виктора, репетитора по гитаре"
@@ -67,12 +67,14 @@
                     </div>
                     <h1 class="right-wrapper__tittle">Я Виктор</h1>
                     <hr class="right-wrapper__line">
-                    <p class="right-wrapper__text">Репетитор игры на гитаре с семилетним опытом преподавания</p>
+                    <p class="right-wrapper__text">Репетитор игры на гитаре <br> с семилетним опытом преподавания</p>
                     <div class="right-wrapper__registration registration">
                         <button class="registration__button">Забронировать <br> урок</button>
-                        <a href="#" class="registration__link-social"><img src="./icons/chat.svg"
-                                alt="Написать Виктору"></a>
-                        <p class="registration__text">Есть <br> вопросы?</p>
+                        <div class="registration__form">
+                            <a href="#" class="registration__link-social"><img src="./icons/chat.svg"
+                                    alt="Написать Виктору"></a>
+                            <p class="registration__text">Есть <br> вопросы?</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Круги -->
@@ -85,68 +87,72 @@
             </div>
         </section>
         <!-- вторая секция -->
-        <section class="type-lessons section" id="about-me">
-            <h2>Преподаю</h2>
-            <hr>
-            <!-- картинки с гитарами -->
-            <div class="type-lessons__guitars guitar">
-                <div class="guitar__block_grey">
-                    <img src="./img/guitars-electric.png" alt="Вы можете научиться играть на электрической гитаре"
-                        class="guitar__picture">
-                    <h3 class="guitar__name">Электро гитара</h3>
-                    <div class="guitar__first-elipse elipse-s">
-                        <div class="elipse-s__subtract"></div>
+        <section class="type-lessons" id="about-me">
+            <div class="type-lessons__container container">
+                <h2>Преподаю</h2>
+                <hr>
+                <!-- картинки с гитарами -->
+                <div class="type-lessons__guitars guitar">
+                    <div class="guitar__block guitar__block_grey">
+                        <img src="./img/guitars-electric.png" alt="Вы можете научиться играть на электрической гитаре"
+                            class="guitar__picture">
+                        <h3 class="guitar__name">Электро гитара</h3>
+                        <!-- круг -->
+                        <div class="guitar__first-elipse elipse-s">
+                            <div class="elipse-s__subtract"></div>
+                        </div>
+                    </div>
+                    <div class="guitar__block guitar__block_orange">
+                        <img src="./img/guitars-acoustic.png" alt="Вы можете научиться играть на акустической гитаре"
+                            class="guitar__picture">
+                        <h3 class="guitar__name">Акустическая гитара</h3>
+                    </div>
+                    <div class="guitar__block guitar__block_blue">
+                        <img src="./img/guitars-ukulele.png" alt="Вы можете научиться играть на укулеле"
+                            class="guitar__picture">
+                        <h3 class="guitar__name">Укулеле гитара</h3>
+                        <!-- круг -->
+                        <div class="guitar__second-elipse elipse-s">
+                            <div class="elipse-s__subtract"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="guitar__block_orange">
-                    <img src="./img/guitars-acoustic.png" alt="Вы можете научиться играть на акустической гитаре"
-                        class="guitar__picture">
-                    <h3 class="guitar__name">Акустическая гитара</h3>
-                </div>
-                <div class="guitar__block_blue">
-                    <img src="./img/guitars-ukulele.png" alt="Вы можете научиться играть на укулеле"
-                        class="guitar__picture">
-                    <h3 class="guitar__name">Укулеле гитара</h3>
-                    <div class="guitar__second-elipse elipse-s">
-                        <div class="elipse-s__subtract"></div>
+                <!-- о себе в цифрах -->
+                <div class="type-lessons__in-numbers in-numbers">
+                    <div class="in-numbers__block in-numbers__block_first">
+                        <img src="./icons/in-nunbers-cup.svg" alt="Кубок за большой стаж" class="in-numbers__icon">
+                        <div class="in-numbers__content">
+                            <h4 class="in-numbers__number">7</h4>
+                            <p class="in-numbers__text">лет <br> преподавания</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- о себе в цифрах -->
-            <div class="type-lessons__in-numbers in-numbers">
-                <div class="in-numbers__block in-numbers__block_first">
-                    <img src="./icons/in-nunbers-cup.svg" alt="Кубок за большой стаж" class="type-lessons__icon">
-                    <div class="in-numbers__content">
-                        <h4 class="in-numbers__number">7</h4>
-                        <p class="in-numbers__text">лет <br> преподавания</p>
+                    <div class="in-numbers__block in-numbers__block_second">
+                        <img src="./icons/in-nunbers-recall.svg" alt="Картинка отзывов" class="in-numbers__icon">
+                        <div class="in-numbers__content">
+                            <h4 class="in-numbers__number">276</h4>
+                            <p class="in-numbers__text">Отзывов <br> на 5 звезд</p>
+                        </div>
                     </div>
-                </div>
-                <div class="in-numbers__block">
-                    <img src="./icons/in-nunbers-recall.svg" alt="Картинка отзывов" class="type-lessons__icon">
-                    <div class="in-numbers__content">
-                        <h4 class="in-numbers__number">276</h4>
-                        <p class="in-numbers__text">Отзывов <br> на 5 звезд</p>
+                    <div class="in-numbers__block in-numbers__block_third">
+                        <img src="./icons/in-nunbers-students.svg" alt="Студенческая шляпа" class="in-numbers__icon">
+                        <div class="in-numbers__content">
+                            <h4 class="in-numbers__number">314</h4>
+                            <p class="in-numbers__text">Студентов <br> обученно</p>
+                        </div>
                     </div>
-                </div>
-                <div class="in-numbers__block">
-                    <img src="./icons/in-nunbers-students.svg" alt="Студенческая шляпа" class="type-lessons__icon">
-                    <div class="in-numbers__content">
-                        <h4 class="in-numbers__number">314</h4>
-                        <p class="in-numbers__text">Студентов <br> обученно</p>
-                    </div>
-                </div>
-                <div class="in-numbers__block">
-                    <img src="./icons/in-nunbers-timing.svg" alt="Нотный стан" class="type-lessons__icon">
-                    <div class="in-numbers__content">
-                        <h4 class="in-numbers__number">2000</h4>
-                        <p class="in-numbers__text">часов <br> преподавания</p>
+                    <div class="in-numbers__block in-numbers__block_fourth">
+                        <img src="./icons/in-nunbers-timing.svg" alt="Нотный стан" class="in-numbers__icon">
+                        <div class="in-numbers__content">
+                            <h4 class="in-numbers__number">2000</h4>
+                            <p class="in-numbers__text">часов <br> преподавания</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Третья секция -->
         <section class="text-about" id="lessons">
-            <div class="text-about__section section">
+            <div class="text-about__section container">
                 <!-- Картинки -->
                 <div class="text-about__left-wrapper">
                     <div class="text-about__tittle">
@@ -193,7 +199,7 @@
     </main>
     <!-- Футер -->
     <footer class="footer">
-        <div class="footer__content section">
+        <div class="footer__content container">
             <img src="./img/footer-guitar.png" alt="Пример гитары, на которой вы можете научиться играть"
                 class="footer__img">
             <div class="footer__wrapper">

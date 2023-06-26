@@ -361,7 +361,7 @@ table {
   border-spacing: 0;
 }
 
-.section {
+.container {
   max-width: 1140px;
   margin: 0 auto;
   position: relative;
@@ -442,13 +442,14 @@ h1, h2, h3, h4, button {
 }
 .main-section__first-elipse {
   position: absolute;
-  top: 129px;
-  right: 80px;
+  top: -24px;
+  right: -48px;
+  z-index: -1;
 }
 .main-section__second-elipse {
   position: absolute;
-  right: -120px;
-  top: 650px;
+  right: -252px;
+  top: 540px;
 }
 
 .nav {
@@ -553,6 +554,9 @@ h1, h2, h3, h4, button {
   border: none;
   margin-right: 32px;
 }
+.registration__form {
+  display: flex;
+}
 .registration__link-social {
   margin-right: 12px;
 }
@@ -594,8 +598,7 @@ h1, h2, h3, h4, button {
   display: flex;
   justify-content: space-between;
 }
-.guitar__block_grey {
-  background-color: #E2E2E2;
+.guitar__block {
   width: 360px;
   height: 360px;
   border-radius: 10px;
@@ -605,6 +608,16 @@ h1, h2, h3, h4, button {
   position: relative;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.guitar__block_grey {
+  background-color: #E2E2E2;
+  position: relative;
+}
+.guitar__block_orange {
+  background-color: #f28b64;
+}
+.guitar__block_blue {
+  background-color: #5290EA;
   position: relative;
 }
 .guitar__first-elipse {
@@ -612,31 +625,6 @@ h1, h2, h3, h4, button {
   top: 200px;
   left: -86px;
   z-index: -1;
-}
-.guitar__block_orange {
-  background-color: #f28b64;
-  width: 360px;
-  height: 360px;
-  border-radius: 10px;
-  font-size: 36px;
-  display: flex;
-  padding-top: 25px;
-  position: relative;
-  text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.guitar__block_blue {
-  background-color: #5290EA;
-  width: 360px;
-  height: 360px;
-  border-radius: 10px;
-  font-size: 36px;
-  display: flex;
-  padding-top: 25px;
-  position: relative;
-  text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  position: relative;
 }
 .guitar__second-elipse {
   position: absolute;
@@ -765,4 +753,255 @@ h1, h2, h3, h4, button {
 .footer__tittle {
   margin-bottom: 20px;
   position: relative;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+  .main-section {
+    min-height: 530px;
+  }
+  .main-section__first-elipse {
+    top: -13px;
+    right: -37px;
+  }
+  .main-section__second-elipse {
+    right: -97px;
+    top: 434px;
+  }
+  .left-wrapper__rectangle-blue {
+    background-color: #5290EA;
+    width: 494px;
+    height: 165px;
+    transform: rotate(-64deg);
+    border-radius: 100px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .left-wrapper__rectangle-orange {
+    background-color: #F28B64;
+    width: 541px;
+    height: 165px;
+    transform: rotate(312deg);
+    border-radius: 100px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .left-wrapper__rectangle-grey {
+    background-color: #E2E2E2;
+    width: 541px;
+    height: 165px;
+    transform: rotate(-36.15deg);
+    border-radius: 100px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .left-wrapper__photo {
+    height: 531px;
+    width: 662px;
+  }
+  h1 {
+    font-size: 65px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 34px;
+  }
+  .elipse-m {
+    width: 225px;
+    height: 225px;
+  }
+  .elipse-m__subtract {
+    width: 150px;
+    height: 150px;
+  }
+  .right-wrapper {
+    top: 111px;
+    right: 19px;
+  }
+  .right-wrapper__social {
+    margin-bottom: 10px;
+  }
+  .type-lessons {
+    min-height: 590px;
+    overflow: hidden;
+  }
+  .guitar__block {
+    width: 307px;
+    height: 307px;
+  }
+  .guitar__block_grey .guitar__picture {
+    margin-left: -10px;
+  }
+  .guitar__first-elipse {
+    top: 127px;
+  }
+  .guitar__name {
+    left: 136px;
+    top: 127px;
+  }
+  .in-numbers img {
+    margin-right: 5px;
+  }
+  .text-about {
+    min-height: 600px;
+  }
+  .text-about__section {
+    padding-left: 41px;
+  }
+  .text-about__rectangle-striped {
+    top: -58px;
+    left: -35px;
+  }
+  .text-about__first-elipse {
+    top: -124px;
+    left: 67px;
+  }
+  .footer__content {
+    min-height: 216px;
+  }
+  .footer__img {
+    width: 512px;
+    height: 180px;
+    left: -167px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+  .left-wrapper {
+    padding-top: 20px;
+    padding-left: -40px;
+  }
+  .left-wrapper__photo {
+    height: 424px;
+    width: 529px;
+  }
+  .left-wrapper__rectangle-blue {
+    width: 420px;
+    height: 130px;
+    transform: rotate(-70deg);
+  }
+  .left-wrapper__rectangle-orange {
+    width: 462px;
+    height: 130px;
+    transform: rotate(-45deg);
+  }
+  .left-wrapper__rectangle-grey {
+    width: 462px;
+    height: 130px;
+    transform: rotate(-25deg);
+  }
+  .right-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .right-wrapper__tittle {
+    margin-bottom: 15px;
+    font-size: 55px;
+  }
+  .right-wrapper hr {
+    display: none;
+  }
+  .right-wrapper__text {
+    text-align: end;
+  }
+  .right-wrapper__social {
+    margin-bottom: 10px;
+  }
+  .social__icon {
+    width: 35px;
+    height: 35px;
+  }
+  .social__icon:not(:last-child) {
+    margin-right: 15px;
+  }
+  .main-section__first-elipse {
+    display: none;
+  }
+  .main-section__second-elipse {
+    display: none;
+  }
+  .registration {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .registration__button {
+    width: 184px;
+    height: 51px;
+    font-size: 16px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .registration__form {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .registration__text {
+    text-align: end;
+    margin-right: 15px;
+  }
+  h2 {
+    font-size: 55px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  .guitar__block {
+    width: 230px;
+    height: 230px;
+  }
+  .guitar__block_orange .guitar__name {
+    left: 86px;
+  }
+  .guitar__picture {
+    width: 121px;
+    height: 207px;
+  }
+  .guitar__second-elipse {
+    top: -217px;
+    left: 152px;
+  }
+  .guitar__name {
+    top: 91px;
+    left: 113px;
+  }
+  .guitar__first-elipse {
+    top: 116px;
+  }
+  .in-numbers {
+    flex-wrap: wrap;
+    row-gap: 15px;
+    padding-left: 20%;
+  }
+  .in-numbers__block_second {
+    width: 50%;
+  }
+  .in-numbers__block_fourth {
+    width: 50%;
+  }
+  .in-numbers__icon {
+    width: 73px;
+    height: 80px;
+    padding-right: 10px;
+  }
+  .in-numbers__number {
+    font-size: 25px;
+  }
+  .in-numbers__text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

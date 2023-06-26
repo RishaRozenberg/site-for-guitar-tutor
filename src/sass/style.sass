@@ -39,12 +39,13 @@ h1, h2, h3, h4, button
         position: relative
     &__first-elipse
         position: absolute
-        top: 129px
-        right: 80px
+        top: -24px
+        right: -48px
+        z-index: -1
     &__second-elipse
         position: absolute
-        right: -120px
-        top: 650px
+        right: -252px
+        top: 540px
 .nav
     color: black
     &__list
@@ -104,6 +105,8 @@ h1, h2, h3, h4, button
     &__button
         @include button
         margin-right: 32px
+    &__form
+        display: flex
     &__link-social
         margin-right: 12px
 
@@ -131,19 +134,21 @@ h1, h2, h3, h4, button
 .guitar
     display: flex
     justify-content: space-between
-    &__block_grey
-        @include guitar__block (#E2E2E2)
-        position: relative
+    &__block
+        @include guitar__block
+        &_grey
+            background-color: #E2E2E2
+            position: relative
+        &_orange
+            background-color: $color-red
+        &_blue
+            background-color: $color-blue
+            position: relative
     &__first-elipse
         position: absolute
         top: 200px
         left: -86px
         z-index: -1
-    &__block_orange
-        @include guitar__block ($color-red)
-    &__block_blue
-        @include guitar__block ($color-blue)
-        position: relative
     &__second-elipse
         position: absolute
         top: -100px
@@ -171,7 +176,6 @@ h1, h2, h3, h4, button
         justify-content: space-evenly
     &__text
         font-size: 18px
-
 .text-about
     background-color: $bg-section
     min-height: 640px
@@ -238,3 +242,181 @@ h1, h2, h3, h4, button
     &__tittle
         margin-bottom: 20px
         position: relative
+
+@media (max-width: 1199px)
+    .container
+        width: 960px
+    .main-section
+        min-height: 530px
+        &__first-elipse
+            top: -13px
+            right: -37px
+        &__second-elipse
+            right: -97px
+            top: 434px
+    .left-wrapper
+        &__rectangle-blue
+            @include rectangle(#5290EA, 494px, 165px, rotate(-64deg))
+        &__rectangle-orange
+            @include rectangle(#F28B64, 541px, 165px, rotate(312deg))
+        &__rectangle-grey
+            @include rectangle(#E2E2E2, 541px, 165px, rotate(-36.15deg))
+        &__photo
+            height: 531px
+            width: 662px
+    h1
+        font-size: 65px
+    h3
+        font-size: 30px
+    h4
+        font-size: 34px
+    .elipse-m
+        width: 225px
+        height: 225px
+        &__subtract
+            width: 150px
+            height: 150px
+    .right-wrapper
+        top: 111px
+        right: 19px
+        &__social
+            margin-bottom: 10px
+    .type-lessons
+        min-height: 590px
+        overflow: hidden
+    .guitar
+        &__block
+            width: 307px
+            height: 307px
+            &_grey
+                .guitar__picture
+                    margin-left: -10px
+        &__first-elipse
+            top: 127px
+        &__name
+            left: 136px
+            top: 127px
+    .in-numbers
+        img
+            margin-right: 5px
+    .text-about
+        min-height: 600px
+        &__section
+            padding-left: 41px
+        &__rectangle-striped
+            top: -58px
+            left: -35px
+        &__first-elipse
+            top: -124px
+            left: 67px
+    .footer
+        &__content
+            min-height: 216px
+        &__img
+            width: 512px
+            height: 180px
+            left: -167px
+@media (max-width: 991px)
+    .container
+        width: 720px
+    .left-wrapper
+        padding-top: 20px
+        padding-left: -40px
+        &__photo
+            height: 424px
+            width: 529px
+        &__rectangle-blue
+            width: 420px
+            height: 130px
+            transform: rotate(-70deg)
+        &__rectangle-orange
+            width: 462px
+            height: 130px
+            transform: rotate(-45deg)
+        &__rectangle-grey
+            width: 462px
+            height: 130px
+            transform: rotate(-25deg)
+    .right-wrapper
+        display: flex
+        flex-direction: column
+        align-items: end
+        &__tittle
+            margin-bottom: 15px
+            font-size: 55px
+        hr
+            display: none
+        &__text
+            text-align: end
+        &__social
+            margin-bottom: 10px
+    .social__icon
+        width: 35px
+        height: 35px
+        &:not(:last-child)
+            margin-right: 15px
+    .main-section__first-elipse
+        display: none
+    .main-section__second-elipse
+        display: none
+    .registration
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        &__button
+            width: 184px
+            height: 51px
+            font-size: 16px
+            margin-right: 0px
+            margin-bottom: 20px
+        &__form
+            flex-direction: row-reverse
+            align-items: center
+        &__text
+            text-align: end
+            margin-right: 15px
+    h2
+        font-size: 55px
+    h3
+        font-size: 25px
+    .guitar
+        &__block
+            width: 230px
+            height: 230px
+            &_orange
+                .guitar__name
+                    left: 86px
+        &__picture
+            width: 121px
+            height: 207px
+        &__second-elipse
+            top: -217px
+            left: 152px
+        &__name
+            top: 91px
+            left: 113px
+        &__first-elipse
+            top: 116px
+    .in-numbers
+        flex-wrap: wrap
+        row-gap: 15px
+        padding-left: 20%
+        &__block_second
+            width: 50%
+        &__block_fourth
+            width: 50%
+        &__icon
+            width: 73px
+            height: 80px
+            padding-right: 10px
+        &__number
+            font-size: 25px
+        &__text
+            font-size: 18px
+
+@media (max-width: 767px)
+    .container
+        width: 540px
+@media (max-width: 575px)
+    .container
+        width: 100%
