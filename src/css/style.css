@@ -448,8 +448,8 @@ h1, h2, h3, h4, button {
 }
 .main-section__second-elipse {
   position: absolute;
-  right: -252px;
-  top: 540px;
+  right: -104px;
+  top: 610px;
 }
 
 .nav {
@@ -579,6 +579,7 @@ h1, h2, h3, h4, button {
 .type-lessons {
   padding-top: 32px;
   min-height: 700px;
+  overflow: hidden;
 }
 .type-lessons hr {
   width: 94px;
@@ -897,6 +898,7 @@ h1, h2, h3, h4, button {
     display: flex;
     flex-direction: column;
     align-items: end;
+    top: 61px;
   }
   .right-wrapper__tittle {
     margin-bottom: 15px;
@@ -911,6 +913,19 @@ h1, h2, h3, h4, button {
   .right-wrapper__social {
     margin-bottom: 10px;
   }
+  .right-wrapper .registration {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .right-wrapper .registration__form {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .right-wrapper .registration__text {
+    text-align: end;
+    margin-right: 15px;
+  }
   .social__icon {
     width: 35px;
     height: 35px;
@@ -924,11 +939,6 @@ h1, h2, h3, h4, button {
   .main-section__second-elipse {
     display: none;
   }
-  .registration {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
   .registration__button {
     width: 184px;
     height: 51px;
@@ -936,19 +946,14 @@ h1, h2, h3, h4, button {
     margin-right: 0px;
     margin-bottom: 20px;
   }
-  .registration__form {
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-  .registration__text {
-    text-align: end;
-    margin-right: 15px;
-  }
   h2 {
     font-size: 55px;
   }
   h3 {
     font-size: 25px;
+  }
+  .type-lessons {
+    min-height: 577px;
   }
   .guitar__block {
     width: 230px;
@@ -973,20 +978,27 @@ h1, h2, h3, h4, button {
     top: 116px;
   }
   .in-numbers {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 25% 1fr 8% 1fr 25%;
+    grid-template-rows: 1fr 1fr;
     row-gap: 15px;
-    padding-left: 20;
+    margin-bottom: 0px;
+  }
+  .in-numbers__block_first {
+    grid-column: 2/3;
   }
   .in-numbers__block_second {
-    width: 50%;
+    grid-column: 4/5;
+  }
+  .in-numbers__block_third {
+    grid-column: 2/3;
   }
   .in-numbers__block_fourth {
-    width: 50%;
+    grid-column: 4/5;
   }
   .in-numbers__icon {
     width: 73px;
     height: 80px;
-    padding-right: 10px;
   }
   .in-numbers__number {
     font-size: 25px;
@@ -994,10 +1006,62 @@ h1, h2, h3, h4, button {
   .in-numbers__text {
     font-size: 18px;
   }
+  .main-text hr {
+    bottom: 49px;
+  }
+  .main-text .registration {
+    align-items: center;
+  }
+  .main-text .registration__button {
+    margin-right: 20px;
+    margin-bottom: 0px;
+  }
+  .text-about__section {
+    padding-left: 20px;
+  }
+  .text-about__tittle h2 {
+    margin-right: 70px;
+    font-size: 40px;
+  }
+  .text-about__rectangle-striped {
+    width: 200px;
+    height: 200px;
+    top: -55px;
+    left: -39px;
+  }
+  .text-about__second-elipse {
+    right: -80px;
+    top: -89px;
+  }
+  .elipse-m {
+    width: 200px;
+    height: 200px;
+  }
+  .elipse-m__subtract {
+    width: 133px;
+    height: 133px;
+  }
+  .footer__content {
+    min-height: 154px;
+  }
+  .footer__img {
+    width: 409px;
+    left: -28px;
+  }
+  .footer__tittle {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  .footer__tittle .tittle-hr {
+    bottom: 34px;
+  }
 }
 @media (max-width: 767px) {
   .container {
     width: 540px;
+  }
+  .header__nav {
+    display: none;
   }
 }
 @media (max-width: 575px) {

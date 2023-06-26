@@ -44,8 +44,8 @@ h1, h2, h3, h4, button
         z-index: -1
     &__second-elipse
         position: absolute
-        right: -252px
-        top: 540px
+        right: -104px
+        top: 610px
 .nav
     color: black
     &__list
@@ -123,6 +123,7 @@ h1, h2, h3, h4, button
 .type-lessons
     padding-top: 32px
     min-height: 700px
+    overflow: hidden
     hr
         @include hr (94px)
         margin-bottom: 40px
@@ -341,6 +342,7 @@ h1, h2, h3, h4, button
         display: flex
         flex-direction: column
         align-items: end
+        top: 61px
         &__tittle
             margin-bottom: 15px
             font-size: 55px
@@ -350,6 +352,16 @@ h1, h2, h3, h4, button
             text-align: end
         &__social
             margin-bottom: 10px
+        .registration
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            &__form
+                flex-direction: row-reverse
+                align-items: center
+            &__text
+                text-align: end
+                margin-right: 15px
     .social__icon
         width: 35px
         height: 35px
@@ -359,26 +371,18 @@ h1, h2, h3, h4, button
         display: none
     .main-section__second-elipse
         display: none
-    .registration
-        display: flex
-        flex-direction: column
-        align-items: flex-end
-        &__button
-            width: 184px
-            height: 51px
-            font-size: 16px
-            margin-right: 0px
-            margin-bottom: 20px
-        &__form
-            flex-direction: row-reverse
-            align-items: center
-        &__text
-            text-align: end
-            margin-right: 15px
+    .registration__button
+        width: 184px
+        height: 51px
+        font-size: 16px
+        margin-right: 0px
+        margin-bottom: 20px
     h2
         font-size: 55px
     h3
         font-size: 25px
+    .type-lessons
+        min-height: 577px
     .guitar
         &__block
             width: 230px
@@ -398,25 +402,75 @@ h1, h2, h3, h4, button
         &__first-elipse
             top: 116px
     .in-numbers
-        flex-wrap: wrap
+        display: grid
+        grid-template-columns: 25% 1fr 8% 1fr 25%
+        grid-template-rows: 1fr 1fr
         row-gap: 15px
-        padding-left: 20
+        margin-bottom: 0px
+        &__block_first
+            grid-column: 2/3
         &__block_second
-            width: 50%
+            grid-column: 4/5
+        &__block_third
+            grid-column: 2/3
         &__block_fourth
-            width: 50%
+            grid-column: 4/5
         &__icon
             width: 73px
             height: 80px
-            padding-right: 10px
+            // padding-right: 10px
         &__number
             font-size: 25px
         &__text
             font-size: 18px
+    .main-text
+        hr
+            bottom: 49px
+        .registration
+            align-items: center
+            &__button
+                margin-right: 20px
+                margin-bottom: 0px
+    .text-about
+        &__section
+            padding-left: 20px
+        &__tittle
+            h2
+                margin-right: 70px
+                font-size: 40px
+        &__rectangle-striped
+            width: 200px
+            height: 200px
+            top: -55px
+            left: -39px
+        &__second-elipse
+            right: -80px
+            top: -89px
+    .elipse-m
+        width: 200px
+        height: 200px
+        &__subtract
+            width: 133px
+            height: 133px
+    .footer
+        &__content
+            min-height: 154px
+        &__img
+            width: 409px
+            left: -28px
+        &__tittle
+            margin-bottom: 10px
+            font-size: 40px
+            .tittle-hr
+                bottom: 34px
 
 @media (max-width: 767px)
     .container
         width: 540px
+    .header__nav
+        display: none
+    
+
 @media (max-width: 575px)
     .container
         width: 100%
