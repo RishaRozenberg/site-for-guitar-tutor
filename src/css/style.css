@@ -1301,4 +1301,164 @@ h1, h2, h3, h4, button {
   .container {
     width: 100%;
   }
+  .hamburger {
+    width: 38px;
+    height: 38px;
+    top: 24px;
+  }
+  .main-section__content {
+    position: relative;
+  }
+  .main-section__logo {
+    width: 107px;
+    height: 59px;
+  }
+  .left-wrapper {
+    position: absolute;
+    width: 320px;
+    height: 420px;
+    top: 50%;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: 2px;
+  }
+  .left-wrapper__photo {
+    display: none;
+  }
+  .left-wrapper__rectangle-blue {
+    left: -105px;
+    width: 391px;
+    top: 144px;
+  }
+  .left-wrapper__rectangle-orange {
+    left: -78px;
+    transform: rotate(-65deg);
+    opacity: 0.8;
+    height: 132px;
+    width: 407px;
+    top: 153px;
+  }
+  .left-wrapper__rectangle-grey {
+    width: 397px;
+    transform: rotate(-48deg);
+    left: -38px;
+    top: 180px;
+  }
+  .right-wrapper {
+    position: absolute;
+    align-items: center;
+    right: 0px;
+    top: 90px;
+    width: 100%;
+  }
+  .right-wrapper__tittle {
+    margin-bottom: 16px;
+  }
+  .registration__button {
+    padding: 0;
+    margin: 0;
+  }
+  .social__icon_last {
+    margin: 0;
+  }
+  .type-lessons {
+    margin-bottom: 20px;
+  }
+  .type-lessons__tittle {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 253px;
+    margin-bottom: 20px;
+  }
+  .type-lessons__guitars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+  }
+  .guitar__block {
+    margin-bottom: 20px;
+  }
+  .guitar__first-elipse {
+    top: 121px;
+  }
+  .guitar__second-elipse {
+    top: -78px;
+    left: 85px;
+  }
+  .in-numbers {
+    grid-template-columns: 25% 1fr 10px 1fr 25%;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .in-numbers__block_first {
+    grid-column: 2/5;
+    justify-content: center;
+  }
+  .in-numbers__block_second {
+    grid-column: 2/3;
+  }
+  .in-numbers__block_third {
+    grid-column: 4/5;
+  }
+  .in-numbers__block_fourth {
+    grid-column: 2/5;
+    justify-content: center;
+  }
+  .text-about {
+    min-height: 472px;
+  }
+  .text-about__section {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+  }
+  .text-about__right-wrapper {
+    min-width: 307px;
+  }
+  .text-about__rectangle-striped {
+    left: 20px;
+    top: -108px;
+    width: 160px;
+    height: 160px;
+  }
+  .text-about__first-elipse {
+    top: -145px;
+    left: 86px;
+  }
+  .text-about .elipse-m {
+    width: 160px;
+    height: 160px;
+  }
+  .text-about .elipse-m__subtract {
+    width: 106px;
+    height: 106px;
+  }
+  .main-text {
+    margin-bottom: 25px;
+  }
+  .main-text__paragraph {
+    font-size: 16px;
+  }
+  .main-text span {
+    display: none;
+  }
+  .main-text .registration__button {
+    font-size: 14px;
+  }
+  .footer__content {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__img {
+    opacity: 0.6;
+    z-index: -1;
+    display: absolute;
+  }
+  .footer__wrapper {
+    margin: 0;
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
